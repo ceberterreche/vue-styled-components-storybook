@@ -1,5 +1,5 @@
-import { ThemeProvider } from 'vue-styled-components';
-import theme  from '../src/ui-kit/theme';
+// import { ThemeProvider } from 'vue-styled-components';
+// import theme  from '../src/ui-kit/theme';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -11,3 +11,10 @@ export const parameters = {
   },
 }
 
+// export const decorators = [
+//   (Story) => (
+//     <ThemeProvider theme={theme}>
+//       <Story />
+//     </ThemeProvider>
+//   ),
+// ];
