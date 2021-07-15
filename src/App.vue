@@ -1,18 +1,18 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <CustomThemeProvider>
+    <Button :variant="'primary'" :rounded='true'>button</Button>
+  </CustomThemeProvider>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import Button from './ui-kit/components/Button/Button.vue';
+import CustomThemeProvider from './ui-kit/components/ThemeProvider.vue';
 
-export default Vue.extend({
+export default ({
   name: 'App',
   components: {
-    HelloWorld,
+    CustomThemeProvider,
+    Button,
   },
 });
 </script>
